@@ -24,9 +24,13 @@ while(i < 5){
 
 //Print
 
+var snack1 = document.getElementById("snack1");
+
 if (isNaN(numbSum)){
     console.log("Dati inseriti non validi")
+    snack1.innerHTML = "Dati inseriti non validi";
 }else{
+    snack1.innerHTML = numbSum;
     console.log(numbSum);
 }
 
@@ -38,12 +42,16 @@ do{
     var numb = parseInt(prompt("Inserisci un numero"))
 }while(isNaN(numb));
 
-//Logica
+//Logica e Print
+
+var snack2 = document.getElementById("snack2");
 
 if (numb % 2 === 0){
     console.log(numb);
+    snack2.innerHTML = numb;
 }else{
     console.log(numb + 1);
+    snack2.innerHTML = numb + 1;
 }
 
 //SNACK 3
@@ -66,6 +74,16 @@ while (falseList.length < 3){
 }
 
 //Print
+
+var snack3 = document.getElementById("snack3");
+
+var listPrint = "";
+
+for (var i2 = 0; i2 < falseList.length; i2++){
+    listPrint += "<li>" + falseList[i2] + "</li>";
+}
+
+snack3.innerHTML = listPrint;
 
 console.table(falseList);
 
@@ -90,6 +108,14 @@ if (firstArr.length > secondArr.length){
 }
 
 //Print
+
+var length1 = document.getElementById("length1");
+
+var length2 = document.getElementById("length2");
+
+length1.innerHTML = firstArr.length;
+
+length2.innerHTML = secondArr.length;
 
 console.log(firstArr.length);
 
