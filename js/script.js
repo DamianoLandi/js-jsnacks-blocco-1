@@ -65,4 +65,36 @@ while (falseList.length < 3){
     }
 }
 
+//Print
+
 console.table(falseList);
+
+//SNACK 4
+
+//Dichiarazione Array Iniziali
+
+var firstArr = [453, 465, 7, 765, 69, 420];
+
+var secondArr = [453, 7, 69, 420];
+
+//Logica di Controllo della Lunghezza e Inserimento dei Dati Random Necessari
+
+if (firstArr.length > secondArr.length){
+    while(firstArr.length != secondArr.length){
+        secondArr.push(Math.floor(Math.random() * 778));
+    }
+}else if (firstArr.length < secondArr.length){
+    while(firstArr.length != secondArr.length){
+        firstArr.push(Math.floor(Math.random() * 778));
+    }
+}
+
+//Print
+
+console.log(firstArr.length);
+
+console.table(firstArr);
+
+console.log(secondArr.length);
+
+console.table(secondArr);
