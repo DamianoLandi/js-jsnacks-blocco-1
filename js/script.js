@@ -30,4 +30,18 @@ if (isNaN(numbSum)){
     console.log(numbSum);
 }
 
-console.log(i);
+//SNACK 2
+
+//Raccolta Variabili
+
+do{
+    var numb = parseInt(prompt("Inserisci un numero"))
+}while(isNaN(numb));
+
+//Logica
+
+if (numb % 2 === 0){
+    console.log(numb);
+}else{
+    console.log(numb + 1);
+}
