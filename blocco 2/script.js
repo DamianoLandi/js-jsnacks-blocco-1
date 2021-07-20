@@ -67,3 +67,37 @@ enter.addEventListener("click",function(){
     pallaDisplay2.innerHTML = message3;
 
 });
+
+//SNACK 3
+
+var teamsList = [
+    {
+        Name: "Lazio",
+        City: "Roma",
+        Points: 69,
+    },
+    {
+        Name: "Milan",
+        City: "Milano",
+        Points: 2,
+    },
+    {
+        Name: "Fiorentina",
+        City: "Firenze",
+        Points: 9,
+    }
+]
+
+var table = document.getElementById("teams");
+
+var message4 = "";
+
+for(var i = 0; i < teamsList.length; i++){
+    message4 += "<tr>";
+    for (var key in teamsList[i]){
+        message4 += "<td>" + teamsList[i][key] + "</td>";
+    } 
+    message4 += "</tr>"
+}
+
+table.innerHTML = message4;
